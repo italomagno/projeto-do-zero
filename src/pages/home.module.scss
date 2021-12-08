@@ -1,1 +1,58 @@
-// TODO
+.container{
+  width: 1120px;
+  height: auto;
+  margin: 0 auto;
+
+  .content{
+    width: 700px;
+    height: 6.75rem;
+    margin: 0 auto;
+    div{
+      a{
+        width: fit-content;
+        height: fit-content;
+      }
+      h1{
+        width: fit-content;
+        color: var(--heading-color);
+        font: (--font-title-weight) var(--font-title-size) "inter", sans-serif;
+  
+      }
+      p{
+        margin-top: 0.5rem;
+        font:  var(--font-text-weight) var(--font-text-size) "inter", sans-serif;
+        color: var(--info-color);
+      }
+      div{
+        margin-top: 1.5rem;
+        width: 263px;
+        height: 1.25rem;
+        display: flex;
+        align-items: center;
+        gap: 1.625rem;
+        time{
+          font: var(--font-text-weight) 0.875rem "inter", sans-serif;
+          color: var(--info-color);
+        }
+        p{
+          font: var(--font-text-weight) 0.875rem "inter", sans-serif;
+          color: var(--info-color);
+          margin: 0;
+        }
+      }
+
+      & + div{
+        margin-top: 3rem;
+      }
+    }
+    
+  }
+  div{
+    margin-top: 4rem;
+    span{
+      color: var(--highlight-color);
+      font: 600 var(--font-text-size) "inter", sans-serif;
+    }
+  }
+  
+}
